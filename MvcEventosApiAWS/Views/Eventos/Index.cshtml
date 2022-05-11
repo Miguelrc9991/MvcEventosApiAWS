@@ -1,0 +1,54 @@
+﻿@model IEnumerable<MvcEventosApiAWS.Models.Evento>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a class="nav-link text-dark" asp-controller="Eventos" asp-action="NuevoEvento">Crear Nuevo Evento</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdEvento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Artista)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCategoria)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdEvento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Artista)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCategoria)
+            </td>
+            <td>
+                <a class="btn btn-primary" asp-area="" asp-controller="Eventos" asp-action="Delete" asp-route-idevento="@item.IdEvento">Delete Evento</a>
+            </td>
+            <td>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Eventos" asp-action="UpdateEvento" asp-route-idevento="@item.IdEvento">Update Categoria</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

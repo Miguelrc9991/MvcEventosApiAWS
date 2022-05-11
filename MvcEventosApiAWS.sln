@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcEventosApiAWS", "MvcEventosApiAWS\MvcEventosApiAWS.csproj", "{5168AE4B-894F-4739-A5E2-774520581EDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5168AE4B-894F-4739-A5E2-774520581EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5168AE4B-894F-4739-A5E2-774520581EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5168AE4B-894F-4739-A5E2-774520581EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5168AE4B-894F-4739-A5E2-774520581EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DCE669DE-F17C-4B60-B741-89E37D080D8C}
+	EndGlobalSection
+EndGlobal
